@@ -6,7 +6,7 @@ import 'package:hive_flutter/hive_flutter.dart';
 void main(List<String> args) async {
   await Hive.initFlutter();
   await Hive.openBox<HiveTodoModel>("todo");
-  
+
   Hive.registerAdapter(HiveTodoModelAdapter());
   runApp(const MyApp());
 }
